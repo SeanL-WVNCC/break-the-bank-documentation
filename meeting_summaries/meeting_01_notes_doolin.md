@@ -1,4 +1,4 @@
-# 01/28/2025 Meeting 1 summary - Prof. Jeremy Doolin
+# 01/27/2025 Meeting 1 summary - Prof. Jeremy Doolin
 I’m sorry that I had to miss the meeting. I do have several thoughts that I would like to share. 
 ## Project Components
 * Host platform

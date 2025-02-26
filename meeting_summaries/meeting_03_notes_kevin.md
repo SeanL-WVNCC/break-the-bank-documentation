@@ -1,4 +1,4 @@
-# 02/05/2025 Meeting 1 summary - Kevin H.
+# 02/05/2025 Meeting 3 summary - Kevin H.
 * Initial reveal by software development team of first working exploit. 
 * Vikram discussed Marshall Universities Cybercon 2025
 * Get your R.S.V.P. Into him vie email as soon as possible so budgeting and transportation arrangements can be made. The dates for the conference are March 26th – 29th.

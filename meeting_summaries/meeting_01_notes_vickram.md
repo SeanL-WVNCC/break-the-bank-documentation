@@ -1,4 +1,4 @@
-# 01/28/2025 Meeting 1 summary - Prof. Vickram Tugali
+# 01/27/2025 Meeting 1 summary - Prof. Vickram Tugali
 ## Attendees:
 * Vikram Tugali (Organizer)
 * Josephine, Kevin, Grant from Cybersecurity
