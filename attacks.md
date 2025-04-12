@@ -1,5 +1,4 @@
 # Possible attacks
-* `index.php` accepts a query string parameter `page` that is vulnerable to a path traversal attack. When the page is served, the value of `page` is interpreted as a file path. If the file exists, it is loaded into the page. The intended behavior is that only files within the `./include/` directory will be loaded, but this is not the case. A value of `page=/etc/passwd` will disclose sensitive system information.
 * `search.php` accepts a query string parameter `query` that is vulnerable to a reflected XSS attack. Visiting a url such as `search.php?query=%3Cscript%3Ealert(%27Hi%27)%3C%2Fscript%3E` will trigger untrusted JS.
-* `login.php` is vulnerable to SQL injection. Attempting a username suck as `" OR 1=1 -- ` will allow authentication without a correct password.
+* `login.php` is vulnerable to SQL injection. Attempting a username such as `" OR 1=1 -- ` will allow authentication without a correct password.
 * `login.php` can be used to enumerate users.
