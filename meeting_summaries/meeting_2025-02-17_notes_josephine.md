@@ -1,4 +1,4 @@
-# 02/17/2025 Meeting 1 summary - Josephine P.
+# 02/17/2025 Meeting summary - Josephine P.
 - Cyber Security students (Grant, Josephine, Kevin) gave vulnerability demos/verbal information.
 - OWASP is a source for more in-depth information of each vulnerability.
 - Directory traversal (vulnerability) cannot actually be fully conmmitted on our website.

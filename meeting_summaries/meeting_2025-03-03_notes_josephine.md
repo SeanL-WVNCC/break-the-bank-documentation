@@ -1,4 +1,4 @@
-# 03/03/2025 Meeting 2 summary - Josephine P.
+# 03/03/2025 Meeting summary - Josephine P.
 The meeting began with a recap of the last week of work, the three vulnerabilities
 added, and new implementation suggestions.
 ## Vulnerabilities added:

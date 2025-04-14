@@ -1,4 +1,4 @@
-# 03/19/2025 Meeting 2 summary - Josephine P.
+# 03/19/2025 Meeting summary - Josephine P.
 * Website updates were given and viewed; some vulnerabilities were tested.
 * Hints were added to CSRF vulnerability along with a funny comic.
 * Angela wrote an explanation on the CSRF vulnerability, (needs definition added).
