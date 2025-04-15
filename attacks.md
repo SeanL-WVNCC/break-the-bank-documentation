@@ -1,5 +1,5 @@
 # Possible attacks
-Updated 2025-04-12
+Updated 2025-04-15
 
 ## Reflected XSS
 * `search.php` accepts a query string parameter `query` that is vulnerable to a reflected XSS attack. Visiting a url such as `search.php?query=%3Cscript%3Ealert(%27Hi%27)%3C%2Fscript%3E` will trigger untrusted JavaScript.
@@ -24,3 +24,11 @@ Updated 2025-04-12
 * The file `break_the_bank_database_schema.sql` contains the database schema and sample admin accounts.
 * The file `config/php/php.ini` contains the web server configuration.
 * `info.php` also contains the web server configuration.
+
+## Cross-Site Request Forgery / CSRF
+* `about.php` and `feedback.php` both have the frame of a CSRF attack in place.
+* `about.php' has a form `Learn More About Nixon', disguised as a button, that has two hidden fields. Hackers must figure out the two field names - `changing-user-info` and `new-info-value`, and what the values need to be.
+* `changing-user-info` is for field names in the user table of the database, and `new-info-value` is what the current value of that field will be changed to.
+* The `Learn More About Nixon' form takes the user to `about-nixon.php`, which is a purposefully broken page that gives hackers hints for all of this information; it also executes the SQL statement once the hacker gets all the variables correct.
+* `feedback.php` is vulnerable in almost the exact same way, but the attack is done on the same page and there's another needed value for the hacker to figure out -- there's a hidden 'csrf' form field and the value must be changed for the attack to work.
+* The other variables needed for this page's attack are named the same as in `about.php` - `changing-user-info` and `new-info-value` and they function the same.
