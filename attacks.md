@@ -27,7 +27,7 @@ Updated 2025-04-15
 
 ## Cross-Site Request Forgery / CSRF
 * `about.php` and `feedback.php` both have the frame of a CSRF attack in place.
-* `about.php' has a form `Learn More About Nixon', disguised as a button, that has two hidden fields. Hackers must figure out the two field names - `changing-user-info` and `new-info-value`, and what the values need to be.
+* `about.php' has a form `Learn More About Nixon`, disguised as a button, that has two hidden fields. Hackers must figure out the two field names - `changing-user-info` and `new-info-value`, and what the values need to be.
 * `changing-user-info` is for field names in the user table of the database, and `new-info-value` is what the current value of that field will be changed to.
 * The `Learn More About Nixon' form takes the user to `about-nixon.php`, which is a purposefully broken page that gives hackers hints for all of this information; it also executes the SQL statement once the hacker gets all the variables correct.
 * `feedback.php` is vulnerable in almost the exact same way, but the attack is done on the same page and there's another needed value for the hacker to figure out -- there's a hidden 'csrf' form field and the value must be changed for the attack to work.
